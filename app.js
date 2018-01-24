@@ -3,10 +3,11 @@ const app=express()
 const nj=require('nunjucks')//creamos una instancia de express
 /*const morgan=require('morgan')
 hacerlo luego con morgan*/
-app.listen(3000)
+
 app.engine('html', nj.render);
 app.set('view engine', 'html');
 nj.configure('views',{ noCache: true });
+
 app.use('/',function(req,res,next){
 	//podemos usar chalk
 	console.log(req)
@@ -23,3 +24,4 @@ app.get('/',function(req,res,next){
 	res.render('index',{title:'hola',people:people})
 })
 
+app.listen(3000)
