@@ -21,7 +21,7 @@
           <h5 class="mt-0">
             <a href="/users/{{tweet.name}}">{{tweet.name}}</a>
           </h5>
-          {{tweet.content}}
+          <a href="/tweets/{{tweet.ID}}">{{tweet.content}}</a>
         </div>
       </div>
     </li>
@@ -31,8 +31,8 @@
   <form action="/tweets" method="POST">
     <label for="name_field">Name:</label>
     <input name="name" type="text" id="name_field" />
-    <label for="text_field">Text:</label>
-    <input name="text" type="text" id="text_field" style="width: 350px;" />
+    <label for="text_field">Content:</label>
+    <input name="content" type="text" id="text_field" style="width: 350px;" />
     <input type="submit" value="Submit" />
   </form>
   {% endif %}
