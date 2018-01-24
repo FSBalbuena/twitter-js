@@ -7,10 +7,10 @@ function add(name, content){
 
 }
 function list(){
-	return _.clonedeep(data)
+	return _.cloneDeep(data)
 }
 function find(propiedades){
-	return _clonedeep(_.filter(data,propiedades))
+	return _.cloneDeep(_.filter(data,propiedades))
 }
 
 module.exports={add,list,find}

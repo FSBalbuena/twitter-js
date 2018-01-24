@@ -1,6 +1,7 @@
-const express=require('express')
+const express=require('express')//creamos una instancia de express
 const app=express()
-const nj=require('nunjucks')//creamos una instancia de express
+const nj=require('nunjucks')
+const twBank=require('./tweetBank.js')
 /*const morgan=require('morgan')
 hacerlo luego con morgan*/
 
