@@ -15,10 +15,24 @@
     
       <!-- display tweets here -->
       {% for tweet in tweets %}
-        <li>{{tweet.content}}</li>
+        <li><div class="media">
+  <img class="mr-3" src="..." alt="">
+  <div class="media-body">
+    <h5 class="mt-0">{{tweet.name}}</h5>
+    {{tweet.content}}
+  </div>
+</div></li>
       {% endfor %}
       
     </div>
   </div>
     
 {% endblock %}
+
+<div class="media">
+  <img class="mr-3" src="..." alt="Generic placeholder image">
+  <div class="media-body">
+    <h5 class="mt-0">{{tweet.name}}</h5>
+    {{tweet.content}}
+  </div>
+</div>
