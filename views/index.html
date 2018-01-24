@@ -30,7 +30,7 @@
   {% if showForm %}
   <form action="/tweets" method="POST">
     <label for="name_field">Name:</label>
-    <input name="name" type="text" id="name_field" />
+    <input name="name" type="text" id="name_field" value={{formName}} />
     <label for="text_field">Content:</label>
     <input name="content" type="text" id="text_field" style="width: 350px;" />
     <input type="submit" value="Submit" />

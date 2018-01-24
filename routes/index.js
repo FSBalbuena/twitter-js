@@ -8,7 +8,6 @@ router.get('/', function (req, res) {
   res.render('index', {
     tweets: tweets,
     showForm: true
-
   });
 });
 
@@ -19,7 +18,8 @@ router.get('/users/:name', function (req, res) {
   });
   res.render('index', {
     tweets: list,
-    showForm: false
+    showForm: true,
+    formName: String(name)
   });
 });
 
@@ -39,7 +39,7 @@ router.get('/tweets/:_id', function (req, res) {
 
   res.render('index', {
     tweets: list,
-    showForm: false
+    showForm: false,
   });
 });
 
